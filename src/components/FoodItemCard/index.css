@@ -1,0 +1,32 @@
+.food-item-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 45%;
+  padding: 1%;
+}
+
+.item-card-container-image {
+  width: 30%;
+}
+
+.item-rating-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 17%;
+}
+
+.add-item-button {
+  /* Button */
+
+  /* Auto layout */
+  color: #ffa412;
+  background-color: transparent;
+  padding: 2px;
+  border: 1px solid #ffa412;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+}

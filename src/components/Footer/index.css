@@ -1,0 +1,43 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f172a;
+  padding: 60px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer-logo {
+  /* Frame 275 */
+
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+
+.footer-inner-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-title {
+  /* Features */
+
+  font-family: 'DM Sans';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  /* identical to box height, or 150% */
+
+  color: #ffffff;
+}
+
+.social-media-icons {
+  font-size: 25px;
+  margin: 8px;
+}

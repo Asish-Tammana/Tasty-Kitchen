@@ -1,0 +1,91 @@
+.restaurant-card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 30%;
+  padding: 1%;
+  text-decoration: none;
+}
+
+.restaurant-card-container-image {
+  width: 50%;
+  border-radius: 8px;
+}
+
+.restaurant-card-text-container {
+  padding: 5px;
+  width: 50%;
+  padding-bottom: 15px;
+  margin-left: 0px;
+}
+
+.restaurant-card-title {
+  /* Future of Learning */
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  /* line-height: 24px; */
+  /* identical to box height, or 133% */
+  letter-spacing: 0.2px;
+
+  /* Light / blue-gray / 700 */
+  color: #334155;
+}
+
+.restaurant-card-cuisine {
+  /* Future of Learning */
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  /* line-height: 24px; */
+  /* identical to box height, or 171% */
+
+  /* Light / blue-gray / 500 */
+  color: #64748b;
+}
+
+.rating-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+
+.star {
+  color: #ffcc00;
+}
+
+.rating-text {
+  /* California Roll */
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  /* display: flex;
+  align-items: center; */
+
+  /* Light / blue-gray / 800 */
+  color: #1e293b;
+}
+
+.total-ratings {
+  /* California Roll */
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+
+  /* Light / blue-gray / 500 */
+  color: #64748b;
+}

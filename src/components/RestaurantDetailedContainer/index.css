@@ -1,0 +1,71 @@
+.restaurant-details-container {
+  background-image: url('https://res.cloudinary.com/dyglzqdrl/image/upload/v1709642659/Rectangle_1399_gkzivo.png');
+  background-size: cover;
+  margin-top: 30px;
+  padding: 50px;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.restaurant-details-container-image {
+  width: 35%;
+  border-radius: 12px;
+}
+
+.restaurant-details-text-container {
+  color: #ffffff;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.restaurant-title {
+  /* Future of Learning */
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  /* identical to box height, or 133% */
+  letter-spacing: 0.2px;
+
+  color: #ffffff;
+}
+
+.restaurant-description {
+  /* Future of Learning */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  /* Light / base / white */
+  color: #ffffff;
+}
+
+.ratings-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
+.vl {
+  border-left: 1.5px solid #ffffff;
+  height: 50px;
+}
+
+.food-items-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}

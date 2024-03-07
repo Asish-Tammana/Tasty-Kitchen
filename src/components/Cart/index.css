@@ -1,0 +1,145 @@
+.cart-container {
+  background-color: #f8fafe;
+  margin: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 20px;
+  border: 1px solid #a2b8dca4;
+}
+
+.table-container {
+  width: 100%;
+}
+
+th {
+  /* Future of Learning */
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 55px;
+  /* identical to box height, or 120% */
+  letter-spacing: 0.2px;
+
+  /* Light / blue-gray / 600 */
+  color: #475569;
+}
+
+td {
+  text-align: center;
+}
+
+.counter-cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-price {
+  /* Future of Learning */
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  color: #ffa412;
+}
+
+hr {
+  border: none;
+  border-top: 1px dashed #f00;
+  color: #fff;
+  background-color: #fff;
+  height: 1px;
+}
+
+.order-details-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-total {
+  /* Nike Air Force 1 '07 */
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+
+  /* Basic / 900 */
+  color: #3e4c59;
+}
+
+.item-name {
+  /* Future of Learning */
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 120% */
+  letter-spacing: 0.2px;
+
+  color: #183b56;
+}
+
+.total-cost {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  text-align: right;
+
+  /* Basic / 900 */
+  color: #3e4c59;
+}
+
+.place-order {
+  /* Button */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  background-color: #f7931e;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.empty-cart-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty-cart-description {
+  /* Your cart is empty. Add something from the menu. */
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  text-align: center;
+
+  /* Light / blue-gray / 500 */
+  color: #64748b;
+}
