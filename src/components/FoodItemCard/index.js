@@ -67,7 +67,8 @@ const FoodItemCard = props => {
 
     let cartFromLS = JSON.parse(localStorage.getItem('cartData'))
 
-    cartFromLS = [...cartFromLS, cartItemObj]
+    cartFromLS =
+      cartFromLS === null ? [cartItemObj] : [...cartFromLS, cartItemObj]
 
     localStorage.setItem('cartData', JSON.stringify(cartFromLS))
   }
@@ -76,11 +77,11 @@ const FoodItemCard = props => {
     <div testid="foodItem" className="food-item-container">
       <img src={imageUrl} alt={name} className="item-card-container-image" />
       <div className="restaurant-card-text-container">
-        <p className="restaurant-card-title">{name}</p>
-        <span> ₹ {cost}</span>
+        <h1 className="restaurant-card-title">{name}</h1>
+        <p> ₹ {cost}</p>
         <div className="item-rating-container">
           <FaStar className="star" />
-          <span className="rating-text">{rating}</span>
+          <p className="rating-text">{rating}</p>
         </div>
         {quantity === 0 ? (
           <button

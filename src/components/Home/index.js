@@ -65,7 +65,7 @@ class Home extends Component {
     const cartObj = localStorage.getItem('cartData')
 
     if (cartObj === null) {
-      localStorage.setItem('cartData', JSON.stringify([]))
+      localStorage.setItem('cartData', JSON.stringify(null))
     }
   }
 

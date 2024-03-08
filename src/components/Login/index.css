@@ -109,3 +109,24 @@
   /* Light / red / 500 */
   color: #ef4444;
 }
+
+@media (max-width: 767px) {
+  .login-bg-container {
+    flex-direction: column-reverse;
+  }
+
+  .login-img {
+    height: 20%;
+    width: 50%;
+    align-self: flex-end;
+    border-radius: 500px;
+  }
+
+  .login-box-container {
+    width: 80%;
+  }
+
+  .login-left-side {
+    width: 100%;
+  }
+}

@@ -30,3 +30,9 @@
   margin: 10px;
   cursor: pointer;
 }
+
+@media (max-width: 767px) {
+  .food-item-container {
+    width: 100%;
+  }
+}

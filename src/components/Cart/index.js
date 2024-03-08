@@ -20,8 +20,13 @@ const Cart = () => {
   const addToCartList = () => {
     const cartFromLS = JSON.parse(localStorage.getItem('cartData'))
 
-    updateCartList(cartFromLS)
-    updateCartPageStatus(cartPageStatusList.cartItems)
+    if (cartFromLS === null) {
+      updateCartList([])
+      updateCartPageStatus(cartPageStatusList.emptyCart)
+    } else {
+      updateCartList(cartFromLS)
+      updateCartPageStatus(cartPageStatusList.cartItems)
+    }
   }
 
   useEffect(addToCartList, [])
@@ -83,8 +88,11 @@ const Cart = () => {
           </thead>
           <tbody>
             {cartList.map(item => (
-              <tr key={item.id}>
-                <td className="item-name">{item.name}</td>
+              <tr key={item.id} id="cartItem">
+                <td className="item-name">
+                  <img src={item.imageUrl} alt="food" />
+                  <h1>{item.name}</h1>
+                </td>
                 <td className="counter-cell">
                   <div className="counter-container">
                     <button
@@ -95,7 +103,7 @@ const Cart = () => {
                     >
                       -
                     </button>
-                    <span testid="tem-quantity">{item.quantity}</span>
+                    <p testid="item-quantity">{item.quantity}</p>
                     <button
                       testid="increment-quantity"
                       type="button"
@@ -106,7 +114,10 @@ const Cart = () => {
                     </button>
                   </div>
                 </td>
-                <td className="item-price"> ₹ {item.cost * item.quantity}</td>
+                <td className="item-price">
+                  {' '}
+                  ₹ <p>{item.cost * item.quantity}</p>
+                </td>
               </tr>
             ))}
           </tbody>
@@ -114,14 +125,17 @@ const Cart = () => {
         <hr />
         <div className="order-details-container">
           <h1 className="order-total">Order Total: </h1>
-          <h1 testid="total-price" className="total-cost">
+          <p testid="total-price" className="total-cost">
             ₹ {totalPrice}
-          </h1>
+          </p>
         </div>
         <button
           type="button"
           className="place-order"
-          onClick={() => updateCartPageStatus(cartPageStatusList.placedOrder)}
+          onClick={() => {
+            updateCartPageStatus(cartPageStatusList.placedOrder)
+            localStorage.setItem('cartData', JSON.stringify(null))
+          }}
         >
           Place Order
         </button>

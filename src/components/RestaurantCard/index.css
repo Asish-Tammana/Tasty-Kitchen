@@ -89,3 +89,9 @@
   /* Light / blue-gray / 500 */
   color: #64748b;
 }
+
+@media (max-width: 767px) {
+  .restaurant-card-container {
+    width: 80%;
+  }
+}

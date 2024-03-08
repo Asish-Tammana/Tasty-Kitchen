@@ -128,3 +128,14 @@ bottom: 75.12%; */
 .active-option {
   background-color: #f1f5f9;
 }
+
+@media (max-width: 767px) {
+  .top-container {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .options-button {
+    width: fit-content;
+  }
+}

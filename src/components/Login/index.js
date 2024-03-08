@@ -5,8 +5,8 @@ import {Redirect} from 'react-router-dom'
 import './index.css'
 
 const Login = props => {
-  const [usernameInput, updateUsernameInput] = useState('rahul')
-  const [passwordInput, updatePasswordInput] = useState('rahul@2021')
+  const [usernameInput, updateUsernameInput] = useState('')
+  const [passwordInput, updatePasswordInput] = useState('')
   const [errMsg, updateErrorMsg] = useState('')
 
   const getJwtToken = Cookies.get('jwt_token')
@@ -63,7 +63,7 @@ const Login = props => {
             src="https://res.cloudinary.com/dyglzqdrl/image/upload/v1709359867/Frame_274logo_pcjbhm.png"
             alt="website logo"
           />
-          <h1 className="login-title">Tasty Kitchen</h1>
+          <h1 className="login-title">Tasty Kitchens</h1>
           <h1 className="login-text">Login</h1>
           <form className="login-form-container" onSubmit={loginClicked}>
             <label htmlFor="usernameInput" className="label-input">
@@ -97,8 +97,8 @@ const Login = props => {
       </div>
       <img
         src="https://res.cloudinary.com/dyglzqdrl/image/upload/v1709359870/Rectangle_1456loginImage_hi1efm.png"
-        alt="login"
-        className="website login"
+        alt="website login"
+        className="login-img"
       />
     </div>
   )
