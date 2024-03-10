@@ -32,9 +32,12 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    this.getOfferBanner()
-    this.getRestaurants()
-    this.createCartInLS()
+    const d = async () => {
+      await this.getOfferBanner()
+      await this.getRestaurants()
+      await this.createCartInLS()
+    }
+    d()
   }
 
   convertSnakeToCamel = obj => {
@@ -169,7 +172,7 @@ class Home extends Component {
       apiStatus,
     } = this.state
     return (
-      <>
+      <div>
         {apiStatus === apiResultsList.inProgress ? (
           <ResponseLoader />
         ) : (
@@ -206,7 +209,7 @@ class Home extends Component {
             <Footer />
           </div>
         )}
-      </>
+      </div>
     )
   }
 }

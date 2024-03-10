@@ -74,7 +74,7 @@ const FoodItemCard = props => {
   }
 
   return (
-    <div testid="foodItem" className="food-item-container">
+    <li testid="foodItem" className="food-item-container">
       <img src={imageUrl} alt={name} className="item-card-container-image" />
       <div className="restaurant-card-text-container">
         <h1 className="restaurant-card-title">{name}</h1>
@@ -100,7 +100,7 @@ const FoodItemCard = props => {
           />
         )}
       </div>
-    </div>
+    </li>
   )
 }
 

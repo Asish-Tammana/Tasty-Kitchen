@@ -12,14 +12,14 @@ import './App.css'
 const App = () => (
   <Switch>
     <Route exact path="/login" component={Login} />
-    <ProtectedRoute exact path="/" component={Home} />
+    <ProtectedRoute exact path="/" render={() => <Home />} />
     <ProtectedRoute exact path="/cart" component={Cart} />
     <ProtectedRoute
       exact
       path="/restaurant/:id"
       component={RestaurantDetailedContainer}
     />
-    <Route path="/not-found" component={NotFound} />
+    <Route exact path="/not-found" component={NotFound} />
     <Redirect to="/not-found" />
   </Switch>
 )

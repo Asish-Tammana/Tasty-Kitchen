@@ -97,7 +97,7 @@ class RestaurantDetailedContainer extends Component {
     } = restaurantDetails
 
     return (
-      <>
+      <div>
         {apiStatus === apiResultsList.inProgress ? (
           <ResponseLoader />
         ) : (
@@ -131,15 +131,15 @@ class RestaurantDetailedContainer extends Component {
                 </div>
               </div>
               {/* Menu starts */}
-              <div className="food-items-container">
+              <ul className="food-items-container">
                 {foodItemsList.map(each => (
                   <FoodItemCard itemDetails={each} key={each.id} />
                 ))}
-              </div>
+              </ul>
             </div>
           </div>
         )}
-      </>
+      </div>
     )
   }
 }

@@ -171,9 +171,7 @@ const Cart = () => {
       />
       <h1 className="item-name">Payment Successful</h1>
       <p className="empty-cart-description">
-        Thank you for ordering
-        <br />
-        Your payment is successfully completed.
+        Thank you for ordering Your payment is successfully completed.
       </p>
       <Link to="/">
         <button type="button" className="place-order">
