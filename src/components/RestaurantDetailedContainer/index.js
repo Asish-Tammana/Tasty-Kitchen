@@ -117,15 +117,15 @@ class RestaurantDetailedContainer extends Component {
                   <div className="ratings-section">
                     <div>
                       <FaStar />
-                      <span>{rating}</span>
+                      <p>{rating}</p>
                       <br />
-                      <span>({reviewsCount} ratings)</span>
+                      <p>({reviewsCount} ratings)</p>
                     </div>
                     <div className="vl">{}</div>
                     <div>
-                      <span> ₹ {costForTwo}</span>
+                      <p> ₹ {costForTwo}</p>
                       <br />
-                      <span>cost for Two</span>
+                      <p>Cost for two</p>
                     </div>
                   </div>
                 </div>

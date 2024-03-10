@@ -19,8 +19,9 @@ const Cart = () => {
 
   const addToCartList = () => {
     const cartFromLS = JSON.parse(localStorage.getItem('cartData'))
+    console.log(cartFromLS)
 
-    if (cartFromLS === null) {
+    if (cartFromLS === null || cartFromLS.length === 0) {
       updateCartList([])
       updateCartPageStatus(cartPageStatusList.emptyCart)
     } else {
@@ -88,7 +89,7 @@ const Cart = () => {
           </thead>
           <tbody>
             {cartList.map(item => (
-              <tr key={item.id} id="cartItem">
+              <tr key={item.id} testid="cartItem">
                 <td className="item-name">
                   <img src={item.imageUrl} alt="food" />
                   <h1>{item.name}</h1>
